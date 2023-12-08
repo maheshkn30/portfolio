@@ -1,0 +1,1241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="webiste icon" type="png/Images" href="pic/letter-m.png" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal Portfolio" />
+    <meta name="author" content="Mahesh" />
+    <meta property="og:title" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Finger+Paint&family=Laila&family=Maiden+Orange&family=Oswald:wght@300&family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/878c437061.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Mahesh</title>
+    <style>
+      body {
+        --sb-track-color: #b9bcb6;
+        --sb-thumb-color: #585858;
+        --sb-size: 15px;
+
+        scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+      }
+
+      body::-webkit-scrollbar {
+        width: var(--sb-size);
+      }
+
+      body::-webkit-scrollbar-track {
+        background: var(--sb-track-color);
+        border-radius: 1px;
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background: var(--sb-thumb-color);
+        border-radius: 1px;
+      }
+
+      ::selection {
+        background-color: black;
+        color: white;
+        cursor: grab;
+      }
+
+      * {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+        text-decoration: none;
+        list-style: none;
+        cursor: pointer;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        background-color: #edf1f4;
+      }
+
+      /* menu bar */
+      .menu {
+        max-width: 100%;
+        background-color: #2c2c34;
+        font-family: "Finger Paint", sans-serif;
+        font-family: "Laila", serif;
+        font-family: "Maiden Orange", serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Poppins", sans-serif;
+        left: 10px;
+        right: 10px;
+        padding-left: 20px;
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+      }
+      .menubar {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: black;
+      }
+      .logo {
+        font-size: 27px;
+        color: white;
+        margin-right: 12cm;
+        font-weight: lighter;
+        cursor: pointer;
+      }
+      ul li {
+        text-decoration: none;
+        color: white;
+        text-transform: capitalize;
+        font-size: 20px;
+        display: inline-block;
+        margin-right: 1.2cm;
+        margin-top: 18px;
+      }
+      li a {
+        color: white;
+      }
+      li a:hover {
+        color: #ccd6f4;
+        cursor: pointer;
+      }
+
+      /* home */
+      #home {
+        margin-top: 18px;
+        background-color: #f5f5f7;
+        /* background-image: linear-gradient(300deg, #d3d3d3 0%, #57606f 90%); */
+        width: 100%;
+        height: 385px;
+      }
+
+      h6 {
+        text-align: center;
+        color: black;
+        font-size: 35px;
+        padding-top: 10px;
+        text-transform: capitalize;
+        font-family: "Finger Paint", sans-serif;
+        font-family: "Laila", serif;
+        font-family: "Maiden Orange", serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Poppins", sans-serif;
+      }
+      .h {
+        text-transform: capitalize;
+        font-family: "Nunito", sans-serif;
+        text-align: center;
+        font-size: 60px;
+      }
+      h5 {
+        text-transform: capitalize;
+        font-family: "Finger Paint", sans-serif;
+        font-family: "Laila", serif;
+        font-family: "Maiden Orange", serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Poppins", sans-serif;
+        text-align: center;
+        font-size: 18px;
+      }
+
+      .webs {
+        padding-top: 35px;
+        font-size: 55px;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: "Finger Paint", sans-serif;
+        font-family: "Laila", serif;
+        font-family: "Maiden Orange", serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Poppins", sans-serif;
+        line-height: 70px;
+      }
+      .web {
+        font-size: 80px;
+        text-align: center;
+        text-transform: capitalize;
+        font-family: "Finger Paint", sans-serif;
+        font-family: "Laila", serif;
+        font-family: "Maiden Orange", serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Poppins", sans-serif;
+        line-height: 2cm;
+      }
+      .web::before {
+        content: "<";
+        color: #042f3d;
+        text-shadow: 4px 2px 3px rgba(40, 36, 41, 0.85);
+      }
+      .web::after {
+        content: ">";
+        text-shadow: 4px 2px 3px rgba(40, 36, 41, 0.85);
+        color: #042f3d;
+      }
+
+      /* about  */
+      #about {
+        margin-top: 3px;
+        background-color: #d2d2d7a3;
+        width: 100%;
+        height: 450px;
+      }
+      .mee {
+        padding-top: 30px;
+        text-transform: capitalize;
+        font-size: 40px;
+        cursor: default;
+        text-shadow: 3px 5px 6px rgba(30, 27, 30, 0.44);
+      }
+
+      .abt {
+        cursor: default;
+        padding-top: 25px;
+        font-size: 20px;
+        text-align: center;
+        line-break: auto;
+        color: black;
+        font-family: "Finger Paint", sans-serif;
+        font-family: "Laila", serif;
+        font-family: "Maiden Orange", serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Poppins", sans-serif;
+        margin-left: 60px;
+        margin-right: 35px;
+      }
+
+      /* skills */
+      #skills {
+        cursor: default;
+        margin-top: 2px;
+        background-color: #e8e8ed;
+        width: 100%;
+        height: 350px;
+        font-size: 25px;
+        text-align: center;
+        padding-top: 20px;
+        text-transform: capitalize;
+        font-family: "Finger Paint", sans-serif;
+        font-family: "Laila", serif;
+        font-family: "Maiden Orange", serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .skill {
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      .skil {
+        font-size: 10px;
+        text-transform: capitalize;
+        text-align: center;
+      }
+
+      .skil img {
+        width: 180px;
+        height: 180px;
+        filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5));
+        transition: all 0.2s ease;
+      }
+      .skil img:hover {
+        border: 1px solid transparent;
+        filter: drop-shadow(rgba(0, 0, 0, 0.24) 0px 3px 8px);
+        transform: scale(1.1);
+      }
+
+      /* projects */
+      #project {
+        color: black;
+        margin-top: 3px;
+        background-color: #d2d2d7a3;
+        width: 100%;
+        height: 540px;
+        font-size: 25px;
+        text-align: center;
+        padding-top: 20px;
+        cursor: default;
+        font-family: "Finger Paint", sans-serif;
+        font-family: "Laila", serif;
+        font-family: "Maiden Orange", serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Poppins", sans-serif;
+      }
+      .cardss {
+        padding-top: 23px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        cursor: pointer;
+      }
+      .pic {
+        background-color: #f5f5f7;
+        border-radius: 10px;
+        border: 1px solid transparent;
+        outline: none;
+        text-transform: capitalize;
+        color: black;
+        text-align: center;
+        width: 300px;
+        height: 400px;
+        background-size: contain;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        transition: all 0.2s ease;
+      }
+      .pic:hover {
+        transform: scale(1.1);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+          rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      }
+      .images img {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        object-fit: cover;
+        width: 298px;
+        height: 250px;
+      }
+      .content {
+        padding-bottom: 5px;
+      }
+      .title {
+        font-size: 20px;
+        line-height: 33px;
+      }
+      .desc {
+        font-size: 14px;
+      }
+      .action {
+        cursor: pointer;
+        display: inline-flex;
+        margin-top: 1rem;
+        color: #ffffff;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        align-items: center;
+        gap: 0.25rem;
+        background-color: #2563eb;
+        padding: 4px 25px;
+        border-radius: 4px;
+      }
+
+      .action span {
+        transition: 0.3s ease;
+      }
+
+      .action:hover span {
+        transform: translateX(4px);
+      }
+      /* bislleri water */
+
+      .para {
+        margin-top: 2px;
+        background-color: #c3cbdc;
+        width: 100%;
+        padding-top: 10px;
+      }
+      .paras {
+        font-size: 30px;
+        text-align: center;
+        font-family: "Finger Paint", sans-serif;
+        font-family: "Laila", serif;
+        font-family: "Maiden Orange", serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .cancel {
+        border: none;
+        outline: none;
+        border-bottom: 2px solid black;
+        font-family: "Finger Paint", sans-serif;
+        font-family: "Laila", serif;
+        font-family: "Maiden Orange", serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Poppins", sans-serif;
+        text-transform: capitalize;
+        float: right;
+        font-size: 30px;
+        outline: none;
+        cursor: pointer;
+        background-color: transparent;
+      }
+      .cancel:hover {
+        color: white;
+      }
+
+      .modal {
+        display: none;
+      }
+
+      .slideshow-container {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        max-width: 900px;
+        position: relative;
+        margin: auto;
+      }
+
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+
+      .mySlides img {
+        width: 600px;
+        height: 500px;
+      }
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: black;
+        font-weight: bolder;
+        font-size: 25px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: #e4ecec;
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      /* bisleri */
+
+      /* Connect */
+      #connect {
+        color: black;
+        margin-top: 3px;
+        background-color: #f5f5f7;
+        width: 100%;
+        height: 120px;
+        font-size: 18px;
+        text-align: center;
+        padding-top: 10px;
+        cursor: default;
+        font-family: "Finger Paint", sans-serif;
+        font-family: "Laila", serif;
+        font-family: "Maiden Orange", serif;
+        font-family: "Oswald", sans-serif;
+        font-family: "Playfair Display", serif;
+        font-family: "Poppins", sans-serif;
+      }
+      .emo {
+        padding-top: 15px;
+        display: flex;
+        justify-content: center;
+        column-gap: 20px;
+        text-decoration: none;
+        cursor: default;
+      }
+
+      .emo img {
+        cursor: pointer;
+        width: 25px;
+        height: 25px;
+      }
+      .stc {
+        font-size: 2px;
+        transition: all 0.2s ease-in;
+      }
+      .stc:hover {
+        border-style: none;
+        outline: none;
+        transform: scale(1.3);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+      }
+
+      /* media query  for phone*/
+      @media screen and (min-width: 320px) and (max-width: 480px) {
+        html,
+        body {
+          scroll-behavior: smooth;
+          overflow-x: hidden;
+        }
+        .menu {
+          max-width: 100%;
+          height: 120px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        }
+
+        .menubar {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .logo {
+          margin-top: 5px;
+          padding-left: 2.5cm;
+          font-size: 23px;
+          font-weight: lighter;
+        }
+        ul li {
+          display: inline-block;
+          justify-content: space-between;
+          font-size: 16px;
+          margin-top: 20px;
+          margin-right: 12px;
+        }
+
+        #home {
+          margin-top: 15px;
+          background-color: #f5f5f7;
+          width: 100%;
+          height: 300px;
+        }
+        h6 {
+          font-size: 20px;
+          padding-top: 10px;
+        }
+        .h {
+          font-size: 50px;
+        }
+        h5 {
+          font-size: 15px;
+        }
+        .webs {
+          padding-top: 25px;
+          font-size: 35px;
+          line-height: 70px;
+        }
+        .web {
+          font-size: 35px;
+          line-height: 0.6cm;
+        }
+        #about {
+          background-color: #d2d2d7a3;
+          margin-top: 4px;
+          width: 100%;
+          height: 765px;
+        }
+        .mee {
+          padding-top: 20px;
+          font-size: 35px;
+        }
+
+        .abt {
+          padding-top: 20px;
+          font-size: 18px;
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+        #skills {
+          margin-top: 2px;
+          background-color: #e8e8ed;
+          width: 100%;
+          height: 570px;
+          font-size: 20px;
+          text-align: center;
+          padding-top: 20px;
+        }
+
+        .skill {
+          padding-top: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-around;
+          gap: 10px;
+        }
+
+        .skil {
+          font-size: 9px;
+        }
+        .skil img {
+          width: 120px;
+          height: 120px;
+        }
+        /* projects */
+        #project {
+          background-color: #d2d2d7a3;
+          margin-top: 3px;
+          width: 100%;
+          height: 1380px;
+          font-size: 20px;
+        }
+        .cardss {
+          padding-top: 22px;
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+        }
+        .pic {
+          background-color: #f4f4ec;
+          color: black;
+          width: 300px;
+          height: 400px;
+        }
+
+        .images img {
+          width: 298px;
+          height: 250px;
+          aspect-ratio: 4/1;
+        }
+        .content {
+          padding-bottom: 10px;
+        }
+        .title {
+          font-size: 18px;
+          line-height: 33px;
+        }
+        .desc {
+          font-size: 12px;
+        }
+        #connect {
+          background-color: #e8e8ed;
+          font-size: 15px;
+        }
+        .emo {
+          padding-top: 15px;
+          display: flex;
+          justify-content: center;
+          column-gap: 25px;
+          text-decoration: none;
+          cursor: default;
+        }
+
+        .emo img {
+          width: 20px;
+          height: 20px;
+        }
+        /* bislleri water */
+        .modal {
+          display: none;
+        }
+        .para {
+          margin-top: 2px;
+          background-color: #c3cbdc;
+          width: 100%;
+          padding-top: 10px;
+        }
+        .paras {
+          font-size: 23px;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .cancel {
+          border: none;
+          float: right;
+          font-size: 20px;
+          background-color: transparent;
+        }
+
+        .slideshow-container {
+          background-color: transparent;
+          max-width: 380px;
+          height: 450px;
+          position: relative;
+          margin: auto;
+        }
+        .mySlides img {
+          max-width: 380px;
+          height: 420px;
+        }
+
+        /* bisleri */
+      }
+
+      /* media query  for tablet*/
+      @media screen and (min-width: 481px) and (max-width: 1024px) {
+        html,
+        body {
+          scroll-behavior: smooth;
+          overflow-x: hidden;
+        }
+        .menu {
+          height: 150px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        }
+        .menubar {
+          display: flex;
+          flex-direction: column;
+        }
+        .logo {
+          margin-top: 8px;
+          padding-left: 6.2cm;
+          font-size: 28px;
+          font-weight: lighter;
+        }
+        ul li {
+          display: inline-block;
+          font-size: 25px;
+          margin-top: 20px;
+          margin-right: 40px;
+        }
+        #home {
+          margin-top: 22px;
+          background-color: #f5f5f7;
+          width: 100%;
+          height: 320px;
+        }
+        h6 {
+          font-size: 25px;
+          padding-top: 10px;
+        }
+        .h {
+          font-size: 50px;
+        }
+        h5 {
+          font-size: 18px;
+        }
+        .webs {
+          padding-top: 25px;
+          font-size: 50px;
+          line-height: 70px;
+          cursor: pointer;
+        }
+        .web {
+          font-size: 65px;
+          line-height: 1.5cm;
+        }
+        #about {
+          background-color: #d2d2d7a3;
+          margin-top: 3px;
+          width: 100%;
+          height: 600px;
+        }
+        .mee {
+          padding-top: 20px;
+          font-size: 35px;
+        }
+
+        .abt {
+          padding-top: 20px;
+          font-size: 20px;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+        #skills {
+          margin-top: 2px;
+          background-color: #e8e8ed;
+          width: 100%;
+          height: 250px;
+          font-size: 20px;
+          padding-top: 20px;
+        }
+
+        .skill {
+          padding-top: 20px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-evenly;
+          gap: 5px;
+        }
+
+        .skil {
+          font-size: 9px;
+        }
+        .skil img {
+          width: 90px;
+          height: 90px;
+        }
+        /* projects */
+        #project {
+          background-color: #e8e8ed66;
+          margin-top: 3px;
+          width: 100%;
+          height: 1000px;
+          font-size: 20px;
+        }
+        .cardss {
+          padding-top: 30px;
+          display: flex;
+          gap: 30px;
+          flex-wrap: wrap;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+        }
+        .pic {
+          background-color: #f4f4ec;
+          color: black;
+          width: 300px;
+          height: 400px;
+        }
+
+        .images img {
+          width: 298px;
+          height: 250px;
+        }
+        .content {
+          padding-bottom: 10px;
+        }
+        .title {
+          font-size: 20px;
+          line-height: 33px;
+        }
+        .desc {
+          font-size: 14px;
+        }
+        /* bislleri water */
+        .modal {
+          display: none;
+        }
+        .para {
+          margin-top: 2px;
+          background-color: #c3cbdc;
+          width: 100%;
+          padding-top: 10px;
+        }
+        .paras {
+          font-size: 23px;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .cancel {
+          border: none;
+          float: right;
+          font-size: 20px;
+          background-color: transparent;
+        }
+
+        .slideshow-container {
+          background-color: transparent;
+          max-width: 400px;
+          height: 350px;
+          position: relative;
+          margin: auto;
+        }
+        .mySlides img {
+          max-width: 400px;
+          height: 350px;
+        }
+
+        /* bisleri */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- menu bar -->
+
+    <div class="menu">
+      <div class="menubar">
+        <div class="logo">
+          <h2>Mahesh</h2>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#connect">connect</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Home -->
+    <div id="home">
+      <div class="out">
+        <h6>Hi<span style="color: #444444">,</span> i am</h6>
+        <h2 class="h" title="Mahe">Mahesh k n</h2>
+        <h5>Welcome to my Portfolio</h5>
+        <p class="webs">
+          A Pass<span
+            style="
+              color: #40403d;
+              text-shadow: 2px 3px 3px rgba(40, 36, 41, 0.53);
+            "
+            >i</span
+          >onate
+        </p>
+        <p class="web">
+          Web<span
+            style="
+              color: #2e4057;
+              text-shadow: 2px 3px 3px rgba(40, 36, 41, 0.53);
+            "
+            >/</span
+          >De<span
+            style="
+              color: #444444;
+              text-shadow: 2px 3px 3px rgba(40, 36, 41, 0.53);
+            "
+            >v</span
+          >eloper
+        </p>
+      </div>
+    </div>
+
+    <!-- About me -->
+    <div id="about">
+      <div class="me">
+        <h5 class="mee">About <span style="color: #444444">M</span>e</h5>
+        <p class="abt">
+          Hi! I'm Mahesh, a passionate web developer . I've always been
+          fascinated by the endless possibilities of the web, and that's what
+          drove me to pursue a career in web development with a background in
+          computer science and a strong focus on front-end development,
+          <br />I specialize in creating user-friendly and visually appealing
+          websites. I'm constantly honing my skills in HTML, CSS, and JavaScript
+          to stay up-to-date with the latest trends and technologies.
+          <br />
+          <br />
+          During my journey as a developer, I have worked on various projects,
+          including e-commerce websites and responsive web applications.
+          <br />
+          <br />
+          In my free time, you can find me exploring new design trends, reading
+          tech blogs, or experimenting with new frameworks.
+        </p>
+      </div>
+    </div>
+
+    <!-- skills -->
+    <div id="skills">
+      <h2 class="what" style="text-shadow: 2px 3px 3px rgba(40, 36, 41, 0.53)">
+        What I
+        <span style="color: #444444">K</span>now
+      </h2>
+
+      <div class="skill">
+        <div class="skil">
+          <img src="pic/c.png" loading="lazy" />
+          <h2 class="font">C-Programming Language</h2>
+        </div>
+
+        <div class="skil">
+          <img src="pic/HTML5.png" loading="lazy" />
+          <h2 class="font">HTML</h2>
+        </div>
+
+        <div class="skil">
+          <img src="pic/css.webp" loading="lazy" />
+          <h2 class="font">CSS</h2>
+        </div>
+
+        <div class="skil">
+          <img src="pic/js.png" loading="lazy" style="border-radius: 13px" />
+          <h2 class="font">JavaScript</h2>
+        </div>
+
+        <div class="skil">
+          <img src="pic/my.png" loading="lazy" />
+          <h2 class="font">MySQL</h2>
+        </div>
+
+        <div class="skil">
+          <img src="pic/ad.png" loading="lazy" />
+          <h2 class="font">adobe photoshop</h2>
+        </div>
+      </div>
+
+      <!-- extra  -->
+      <!-- <div class="skill">
+        <div class="skil">
+          <img src="pic/c.png" loading="lazy" />
+          <h2 class="font">C-Programming Language</h2>
+        </div>
+
+        <div class="skil">
+          <img src="pic/HTML5.png" loading="lazy" />
+          <h2 class="font">HTML</h2>
+        </div>
+
+        <div class="skil">
+          <img src="pic/css.webp" loading="lazy" />
+          <h2 class="font">CSS</h2>
+        </div>
+
+        <div class="skil">
+          <img src="pic/js.jpg" loading="lazy" style="border-radius: 13px" />
+          <h2 class="font">JavaScript</h2>
+        </div>
+
+        <div class="skil">
+          <img src="pic/my.png" loading="lazy" />
+          <h2 class="font">MySQL</h2>
+        </div>
+
+        <div class="skil">
+          <img src="pic/ad.png" loading="lazy" />
+          <h2 class="font">adobe photoshop</h2>
+        </div>
+      </div> -->
+    </div>
+
+    <!-- Projects -->
+    <div id="project">
+      <h2 style="text-shadow: 2px 3px 3px rgba(40, 36, 41, 0.53)">
+        Project<mark style="background-color: white">s</mark>
+      </h2>
+      <div class="cardss">
+        <div class="pic">
+          <div class="images">
+            <img src="pic/bisleri.jpg" loading="lazy" />
+          </div>
+          <div class="content">
+            <h5 class="title">Bisleri Water Supply</h5>
+            <p class="desc">
+              Front End: Visual Basic .NET<br />
+              Database: MySQL
+            </p>
+            <div class="action" href="#">
+              Preview
+              <span aria-hidden="true"> → </span>
+            </div>
+            <a
+              class="action"
+              href="https://github.com/maheshkn30/Bisleri-Water-Supply"
+              target="_blank"
+            >
+              Github
+              <span aria-hidden="true"> → </span>
+            </a>
+          </div>
+        </div>
+        <!-- shopping -->
+        <div class="pic">
+          <div class="images">
+            <img src="pic/shopping.jpg" loading="lazy" />
+          </div>
+          <div class="content">
+            <h5 class="title">Shopping Kart</h5>
+            <p class="desc">HTML, CSS, JavaScript<br />Core Java,MySQL</p>
+
+            <a class="action" href="#">
+              View
+              <span aria-hidden="true"> → </span>
+            </a>
+            <a
+              class="action"
+              href="https://maheshkn30.github.io/demo/"
+              target="_blank"
+            >
+              Github
+              <span aria-hidden="true"> → </span>
+            </a>
+          </div>
+        </div>
+
+        <div class="pic">
+          <div class="images">
+            <img src="pic/starb.jpg" loading="lazy" />
+          </div>
+          <div class="content">
+            <h5 class="title">StarBucks Clone</h5>
+            <p class="desc">
+              Full Stack Project<br />
+              Coming Soon
+            </p>
+            <a class="action" href="#">
+              View
+              <span aria-hidden="true"> → </span>
+            </a>
+            <a class="action" href="#">
+              Github
+              <span aria-hidden="true"> → </span>
+            </a>
+          </div>
+        </div>
+        <!-- <div class="pic">
+          <div class="images">
+            <img src="pic/m.jpg" loading="lazy" />
+          </div>
+          <div class="content">
+            <h5 class="title">Bisleri Water Supply</h5>
+            <p class="desc">
+              Front End: Visual Basic .NET<br />
+              Database: MySQL Database
+            </p>
+            <a class="action" href="#">
+              View
+              <span aria-hidden="true"> → </span>
+            </a>
+            <a class="action" href="#">
+              Github
+              <span aria-hidden="true"> → </span>
+            </a>
+          </div>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- bisleri projects -->
+    <div class="modal">
+      <div class="para">
+        <h2
+          class="paras"
+          style="text-shadow: 2px 3px 3px rgba(40, 36, 41, 0.53)"
+        >
+          Bisleri Water Supply
+        </h2>
+        <button class="cancel">close</button>
+
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="pic/sssp.jpg" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="pic/1.jpg" loading="lazy" style="width: 100%" />
+          </div>
+
+          <div class="mySlides fade">
+            <img src="pic/2.JPG" loading="lazy" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="pic/3.JPG" loading="lazy" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="pic/4.JPG" loading="lazy" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="pic/5.JPG" loading="lazy" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="pic/6.JPG" loading="lazy" style="width: 100%" />
+          </div>
+          <div class="mySlides fade">
+            <img src="pic/7.JPG" loading="lazy" style="width: 100%" />
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)"
+            ><img src="pic/back.png" style="width: 25px"
+          /></a>
+          <a class="next" onclick="plusSlides(1)"
+            ><img src="pic/right-arrow.png" style="width: 25px"
+          /></a>
+        </div>
+        <br />
+      </div>
+    </div>
+    <!-- biserli -->
+
+    <!-- Connect-->
+    <div id="connect">
+      <h2>Let's Connect</h2>
+      <h4
+        style="font-size: 12px; text-transform: capitalize; letter-spacing: 1px"
+      >
+        feel free to get in touch!
+      </h4>
+      <div class="emo">
+        <div class="stc">
+          <a
+            href="https://www.linkedin.com/in/mahesh-k-n-ab2353296"
+            target="_blank"
+          >
+            <img src="pic/linkedin.png"
+          /></a>
+        </div>
+        <div class="stc">
+          <a href="https://github.com/maheshkn30" target="_blank"
+            ><img src="pic/github.png"
+          /></a>
+        </div>
+        <div class="stc">
+          <a
+            href="https://instagram.com/_.mahesh._____?igshid=OGQ5ZDc2ODk2ZA=="
+            target="_blank"
+            ><img src="pic/instagram.png"
+          /></a>
+        </div>
+      </div>
+    </div>
+    <script>
+      let openme = document.querySelector(".action");
+      let model = document.querySelector(".modal");
+      let close = document.querySelector(".cancel");
+      let overlay = document.querySelector(".overlay");
+
+      //when click happend
+      document.querySelector(".action").addEventListener("click", function () {
+        console.log("clicked");
+
+        model.classList.remove("modal");
+
+        // document.querySelector(".modal").classList.remove("modal");
+      });
+
+      //to close the model
+      document.querySelector(".cancel").addEventListener("click", function () {
+        console.log("closed");
+        model.classList.add("modal");
+      });
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>

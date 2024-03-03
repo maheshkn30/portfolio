@@ -53,7 +53,14 @@
         color: white;
         cursor: grab;
       }
-
+ /* revel On Scoll */
+      .section {
+        transition: transform 1s, opacity 1s;
+      }
+      .section--hidden {
+        opacity: 0;
+        transform: translateY(8rem);
+      }
       * {
         margin: 0%;
         padding: 0%;
@@ -875,6 +882,7 @@
     </div>
 
     <!-- Home -->
+    <div class="section">
     <div id="home">
       <div class="out">
         <h6>Hi<span style="color: #444444">,</span> i am</h6>
@@ -906,8 +914,10 @@
         </p>
       </div>
     </div>
+  </div>
 
     <!-- About me -->
+    <div class="section">
     <div id="about">
       <div class="me">
         <h5 class="mee">About <span style="color: #444444">M</span>e</h5>
@@ -930,8 +940,10 @@
         </p>
       </div>
     </div>
+  </div>
 
     <!-- skills -->
+    <div class="section">
     <div id="skills">
       <h2 class="what" style="text-shadow: 2px 3px 3px rgba(40, 36, 41, 0.53)">
         What I
@@ -1003,8 +1015,10 @@
         </div>
       </div> -->
     </div>
+  </div>
 
     <!-- Projects -->
+    <div class="section">
     <div id="project">
       <h2 style="text-shadow: 2px 3px 3px rgba(40, 36, 41, 0.53)">
         Project<mark style="background-color: white">s</mark>
@@ -1131,6 +1145,7 @@
         </div> -->
       </div>
     </div>
+  </div>
 
     <!-- bisleri projects -->
     <div class="modal">
@@ -1185,6 +1200,7 @@
     <!-- biserli -->
 
     <!-- Connect-->
+    <div class="section">
     <div id="connect">
       <h2>Let's Connect</h2>
       <h4
@@ -1215,6 +1231,7 @@
         </div>
       </div>
     </div>
+  </div>
     <script>
       let openme = document.querySelector(".action");
       let model = document.querySelector(".modal");
@@ -1267,6 +1284,25 @@
         }
         slides[slideIndex - 1].style.display = "block";
       }
+       // reveleing Up On scroll
+      const allSec = document.querySelectorAll(".section");
+
+      const revelSec = function (entries) {
+        const [entry] = entries;
+
+        if (!entry.isIntersecting) return;
+        entry.target.classList.remove("section--hidden");
+      };
+
+      const sectionObsever = new IntersectionObserver(revelSec, {
+        root: null,
+        threshold: 0.15,
+      });
+
+      allSec.forEach(function (section) {
+        sectionObsever.observe(section);
+        section.classList.add("section--hidden");
+      });
     </script>
   </body>
 </html>
